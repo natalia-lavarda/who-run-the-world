@@ -25,7 +25,7 @@
                     </a>
                 </li>
                 <li class="menu-pages">
-                    <a class="link" href="./suggest.html">
+                    <a class="link active" href="./suggest.html">
                         Sugira
                     </a>
                 </li>
@@ -65,11 +65,24 @@
                             <button class="attach-button" type="submit">Anexar</button>
                         </div>
                     </div>
-                    <button type="submit" class="primary">Enviar</button>
+                    <button type="submit" id="send" class="primary">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <div id="div-modal" class="modal" data-modal>
+        <div class="modal-content">
+            <div class="modal-close">
+                <button class="btn-close" data-close>x</button>
+            </div>
+            <div class="illustration">
+                <img src="../assets/img/check.gif" alt="Ilustração de menina e ponto de exclamação vermelho" class="alert-img">
+            </div>
+            <span class="modal-txt">Obrigada por ajudar a fortalecer nossa rede <3</span>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
