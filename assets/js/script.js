@@ -1,20 +1,27 @@
-const buttonSend = document.getElementById("send");
+(() => {
+  const buttonSend = document.querySelector("[btn-send]");
+  buttonSend.addEventListener("click", (e) => {
+    e.preventDefault();
+    openModal();
+    closeModal();
+    clearFields();
+  });
 
-buttonSend.addEventListener("click", (e) => {
-  e.preventDefault();
-  const abrirModal = () => {
+  const clearFields = () => {
+    const form = document.querySelector("[data-form]");
+    form.reset();
+  };
+
+  const openModal = () => {
     const modal = document.querySelector("[data-modal]");
     modal.classList.add("modal-show");
   };
 
-  const fecharModal = () => {
+  const closeModal = () => {
     const close = document.querySelector("[data-close]");
     const modal = document.querySelector("[data-modal]");
     close.addEventListener("click", () => {
       modal.classList.remove("modal-show");
     });
   };
-
-  abrirModal();
-  fecharModal();
-});
+})();
