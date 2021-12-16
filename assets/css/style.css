@@ -14,8 +14,11 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
-    background: url(../img/background.png) no-repeat;
+    background: url(../img/background.png);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .active {
@@ -32,17 +35,22 @@ body {
     background: #7E459B;
     border-radius: 12px 12px 0px 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
 .logo {
-    position: absolute;
-    width: 123.17px;
-    height: 38.06px;
-    left: 20px;
-    top: 5px;
+    margin-left: 2.5%;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo {
+    width: 100%;
 }
 
 .menu {
@@ -54,7 +62,7 @@ body {
     position: absolute;
     width: 42%;
     height: 50%;
-    margin-right: 2.5%;
+    margin-left: 55%;
     /* left: 536px;
     top: 13px; */
     list-style: none;
@@ -122,6 +130,11 @@ body {
     overflow: hidden;
 }
 
+
+.image-card {
+    width: 100%;
+}
+
 .link-home {
     text-decoration: none;
     color: #494949;
@@ -134,9 +147,8 @@ body {
 }
 
 .txt-area {
-    width: 537.18px;
-    height: 55.72%;
-    left: 76.19%;
+    height: 76.19%;
+    width: 55.72%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +159,7 @@ body {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: 30.4421px;
+    font-size: 1.875rem;
     line-height: 37px;
     text-align: center;
     width: 100%;
@@ -155,11 +167,11 @@ body {
 }
 
 .paragraph {
-    width: 505.47px;
-    height: 120.5px;
+    width: 100%;
+    height: 30%;
     font-family: Lato;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
     text-align: justify;
     margin-bottom: 17px;
@@ -202,6 +214,23 @@ strong {
     line-height: 23px;
 }
 
+@media screen and (max-width: 1310px) {
+    .txt-area {
+        border: 1px solid red;
+        margin-top: 3%;
+        width: 80%;
+    }
+    .container-home {
+        border: 1px solid red;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .card {
+        height: auto;
+    }
+}
+
 /*//////////////// INSPIRING ////////////////*/
 
 .card-small {
@@ -235,9 +264,6 @@ strong {
     text-align: center;
 }
 
-.image-card {
-    width: 100%;
-}
 
 .container {
     display: flex;
