@@ -111,11 +111,23 @@ body {
     order: 0;
     flex-grow: 0;
     margin: 0px 1px;
-    background-image: url(../img/Maria-Da-Penha.jpg);
+    /* background-image: url(../img/Maria-Da-Penha.jpg);
     background-repeat: no-repeat;
     background-position: initial;
-    background-size: 340px;
+    background-size: 340px; */
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.link-home {
+    text-decoration: none;
+    color: #494949;
+    transition: 0.5s all;
+}
+
+.link-home:hover {
+    transform: scale(1.1);
+    transition: 0.5s all;
 }
 
 .txt-area {
@@ -214,6 +226,10 @@ strong {
     margin: 14px 1px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.little-bio {
+    text-align: center;
 }
 
 .image-card {
