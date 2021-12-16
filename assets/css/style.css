@@ -212,11 +212,12 @@ strong {
     order: 0;
     flex-grow: 0;
     margin: 14px 1px;
-    background-image: url(../img/Maria-Da-Penha.jpg);
-    background-repeat: no-repeat;
-    background-position: initial;
-    background-size: 105.52px;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-card {
+    width: 100%;
 }
 
 .container {
